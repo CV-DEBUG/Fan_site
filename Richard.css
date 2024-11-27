@@ -44,9 +44,13 @@ nav ul li a:hover {
 .imgrich{
     display: flex;
     justify-content: center;
-    border-radius: 15px; 
+    margin-top: 1rem;
     width: 100%;
     height: auto;    /* Ajuste automatiquement la hauteur en fonction de la largeur */
+ }
+ .imgrich img{
+    border-radius: 15px; /* Applique l'arrondi aux coins de l'image */
+    height: auto; /* Maintient le ratio de l'image */
 
  }
 
@@ -137,15 +141,7 @@ footer{
     text-align: center;
 }
 
- @media only screen and (max-width: 480px) {
 
-    body {
-  
-      font-size: 12px;
-  
-    }
-  
-  }
 @media (max-width: 768px) {
     header {
         padding: 0.5rem; /* Réduit le padding pour économiser de l'espace */
