@@ -2,24 +2,24 @@ body{
     font-family: "Quantico", serif;
     font-size: 13px; /* Taille de texte adaptée aux petits écrans */
     margin: 0.5rem auto;
-    max-width: 95%;
+    max-width: 95%; /* Ajoute une marge de 0.5rem en haut et en bas (8px), et centre l'élément horizontalement grâce à la marge auto. */
 }
       
 
 header{
     background-color: cornflowerblue;
     border-radius: 15px; /* Arrondit les coins de l'article */ 
-    padding: 0.5rem;
-    max-width: 100%; 
+    padding: 0.5rem;    /* Ajoute un espace interne uniforme de 0.5rem (8px) autour du contenu  de l'élément, éloignant ainsi le contenu des bordures. */
+    max-width: 100%;    /* Limite la largeur maximale de l'élément à 100% de la largeur de son conteneur parent, empêchant tout débordement et favorisant une mise en page responsive. */
    
 }
 .ul-nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 5px; /* Retire les marges par défaut */
+    flex-wrap: wrap;     /* Permet aux éléments flexibles du conteneur de passer à une nouvelle lignelorsque l'espace horizontal est insuffisant, garantissant une disposition adaptative. */
+    list-style: none;   /*enlève les puces devant les listes*/
+    padding: 5px; 
 }
 ul li{
     margin: 0.5rem 0;
@@ -28,16 +28,15 @@ ul li{
 
 ul li a {
     color: white;
-    text-decoration: none;
+    text-decoration: none;  /* Supprime toutes les décorations de texte (ex : soulignement)*/
     padding: 0.5rem 1rem;
     font-weight: 500;
-    border-radius: 10px;
-   font-size: 14px;
+    border-radius: 10px; /*angle arrondi*/
+    font-size: 14px;
 }
 
 nav ul li a:hover {
     background-color: rgba(255,255,255,0.2);
-    transform: scale(1.05); /* agrandir l'élément à 105% de sa taille originale au survol*/
 }
 
 
@@ -54,12 +53,11 @@ nav ul li a:hover {
 
  }
 
-
  .sect-1{
     text-align: center;
     background-color: cornflowerblue;
-    border-radius: 15px; /* Arrondit les coins de l'article */ margin: 1rem 0; /* Ajoute de l'espacement au-dessus et en dessous de l'article */
-    margin: 1rem 0;
+    border-radius: 15px; 
+    margin: 1rem 0; 
     padding: 1rem;
 }
 .background-richou{
@@ -104,9 +102,6 @@ h3 {
     font-size: 1.2rem;
 }
 
-
-
-
 .text-align{
     text-align: center;
 }
@@ -133,7 +128,7 @@ h3 {
 }
     
 li{
-    list-style: none; /* Removes bullets from the list */
+    list-style: none; 
 }
 
 footer{
