@@ -1,49 +1,109 @@
 body{
-    font-family: "Kanit", sans-serif;
-    font-size: ;
+    font-family: "Quantico", serif;
+    font-size: 16px; /* Taille de texte adaptée aux petits écrans */
+    margin: 0;
+    padding: 0;
 }
-.header{
-    display: flex;
-    flex-direction: row;
+      
+
+header{
+    background-color: cornflowerblue;
+    border-radius: 30px; /* Arrondit les coins de l'article */ 
+    padding: 1rem;
+    max-width: 100%; 
    
 }
 .ul-nav{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    background-color: var(--white);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Retire les marges par défaut */
+}
+ul li{
+    margin: 0.5rem 1rem;
+    text-align: center;
 }
 
+ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    border-radius: 20px; 
+}
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: scale(1.05); /* agrandir l'élément à 105% de sa taille originale au survol*/
+}
 
 .imgrich{
     display: flex;
     justify-content: center;
+    border-radius: 30px; 
+    max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+    height: auto;    /* Ajuste automatiquement la hauteur en fonction de la largeur */
+
  }
+
+
+ .sect-1{
+    text-align: center;
+    background-color: cornflowerblue;
+    padding: calc(var(--spacing-unit) * 2);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+    border-radius: 30px; /* Arrondit les coins de l'article */ margin: 1rem 0; /* Ajoute de l'espacement au-dessus et en dessous de l'article */
+}
+.background-richou{
+    background-image: url(Imagesfan/rich3.jpeg) ;
+    background-size: cover; /* Adapte l'image pour couvrir toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Évite de répéter l'image */
+    border-radius: 30px; 
+    height: 300px;
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+
+}
+.biog{
+    line-height: 2; /* Améliore l'espacement entre les lignes pour une meilleure lisibilité */
+}
+
+.sad{
+    background-color: grey;
+    padding: 1.5rem; 
+    border-radius: 30px; /* Arrondit les coins de l'article */
+    margin: 1rem 0; 
+    
+    
+}
+
 
 h1{
     text-align: center;
+    font-family: "Barrio", system-ui;
+    font-weight: 100;
     font-size: 3rem;
 }
 
 h2{
     text-align: center;
+    font-family: "Barrio", system-ui;
+    font-weight: 100;
     font-size: 2.5rem;
 }
 
 h3{
     text-align: center;
-    font-size: 2rem;
+    font-family: "Barrio", system-ui;
+    font-weight: 100;
+    font-size: 1.5rem;
 }
 
-.sect-1{
-    text-align: center;
-    background-color: cornflowerblue;
-    padding: calc(var(--spacing-unit) * 2);
-    margin-bottom: calc(var(--spacing-unit) * 2);
-    border-radius: 5px;
-}
+
 
 
 .text-align{
@@ -51,7 +111,12 @@ h3{
 }
 
 .freedom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
     font-weight: bold;
+    font-size: 150%;
     font-family: "Dancing Script", serif;
   
 }
@@ -62,20 +127,13 @@ h3{
                                     - auto : centre horizontalement en répartissant les marges gauche/droite de façon égale.
                                     - Nécessite un display: block et une largeur (width) définie. */
     margin: 0 auto;
-    width: 50%;
+    width: 15%;
     height: auto;
 }
     
 li{
     list-style: none; /* Removes bullets from the list */
 }
-
-
-
-
-
-
-
 
 footer{
     background-color: slategray;
@@ -91,3 +149,28 @@ footer{
     }
   
   }
+@media (max-width: 768px) {
+    header {
+        max-width: 72%; /* Limite la largeur du header à 90% de l'écran */
+        padding: 0.5rem; /* Réduit le padding pour économiser de l'espace */
+    }
+
+    .ul-nav {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;   
+    }
+
+    ul li {
+        flex-shrink: 1;
+        margin: 0.5rem 0; /* Réduit les marges verticales */
+        text-align: center; /* Centre le texte à l'intérieur */
+        margin: 0; /* Retire les marges pour maximiser l'espace */
+    }
+
+    ul li a {
+        padding: 0.5rem; /* Réduit les paddings internes des liens */
+        font-size: 12px; /* Réduit la taille du texte des liens */
+    }
+   
+}
