@@ -89,7 +89,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem; /* Réduisez l'espace entre les images */
+    gap: 1rem;
+    /* Réduisez l'espace entre les images */
     margin-bottom: 2rem;
 }
 
@@ -101,7 +102,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.linux-logo, .git-logo {
+.linux-logo,
+.git-logo {
     width: 100px;
     height: 100px;
     object-fit: contain;
@@ -247,6 +249,7 @@ body {
         display: flex;
     }
 }
+
 .video-container {
     display: flex;
     flex-direction: column;
@@ -261,4 +264,75 @@ body {
 
 .video-item h3 {
     margin-bottom: var(--spacing-unit);
+}
+
+/* Ensure images and videos are responsive */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Make sure the content sections are responsive */
+.content-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: var(--spacing-unit) auto;
+    padding: calc(var(--spacing-unit) * 1.5);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust the hero section for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: var(--spacing-unit);
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+}
+
+/* Ensure the profile container is responsive */
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    /* Aligner les images horizontalement */
+    justify-content: center;
+    /* Centrer les images horizontalement */
+    align-items: center;
+    /* Aligner les images verticalement */
+    gap: 1rem;
+    /* Réduisez l'espace entre les images */
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+}
+
+.linux-logo,
+.git-logo {
+    width: 80px;
+    height: 80px;
+}
+
+/* Adjust the contact form for smaller screens */
+.contact-form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Ensure the video container is responsive */
+.video-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: var(--spacing-unit) auto;
 }
