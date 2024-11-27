@@ -1,8 +1,8 @@
 body{
     font-family: "Quantico", serif;
     font-size: 13px; /* Taille de texte adaptée aux petits écrans */
-    margin: 0;
-    padding: 0;
+    margin: 0.5rem auto;
+    max-width: 95%;
 }
       
 
@@ -39,6 +39,7 @@ nav ul li a:hover {
     background-color: rgba(255,255,255,0.2);
     transform: scale(1.05); /* agrandir l'élément à 105% de sa taille originale au survol*/
 }
+
 
 .imgrich{
     display: flex;
@@ -147,7 +148,6 @@ footer{
   }
 @media (max-width: 768px) {
     header {
-        max-width: 80%; /* Limite la largeur du header à 90% de l'écran */
         padding: 0.5rem; /* Réduit le padding pour économiser de l'espace */
     }
 
