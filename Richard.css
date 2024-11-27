@@ -1,6 +1,6 @@
 body{
     font-family: "Quantico", serif;
-    font-size: 16px; /* Taille de texte adaptée aux petits écrans */
+    font-size: 13px; /* Taille de texte adaptée aux petits écrans */
     margin: 0;
     padding: 0;
 }
@@ -8,8 +8,8 @@ body{
 
 header{
     background-color: cornflowerblue;
-    border-radius: 30px; /* Arrondit les coins de l'article */ 
-    padding: 1rem;
+    border-radius: 15px; /* Arrondit les coins de l'article */ 
+    padding: 0.5rem;
     max-width: 100%; 
    
 }
@@ -19,10 +19,10 @@ header{
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
-    padding: 10px; /* Retire les marges par défaut */
+    padding: 5px; /* Retire les marges par défaut */
 }
 ul li{
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0;
     text-align: center;
 }
 
@@ -31,7 +31,8 @@ ul li a {
     text-decoration: none;
     padding: 0.5rem 1rem;
     font-weight: 500;
-    border-radius: 20px; 
+    border-radius: 10px;
+   font-size: 14px;
 }
 
 nav ul li a:hover {
@@ -42,8 +43,8 @@ nav ul li a:hover {
 .imgrich{
     display: flex;
     justify-content: center;
-    border-radius: 30px; 
-    max-width: 100%; /* Empêche l'image de dépasser la largeur de son conteneur */
+    border-radius: 15px; 
+    width: 100%;
     height: auto;    /* Ajuste automatiquement la hauteur en fonction de la largeur */
 
  }
@@ -52,55 +53,50 @@ nav ul li a:hover {
  .sect-1{
     text-align: center;
     background-color: cornflowerblue;
-    padding: calc(var(--spacing-unit) * 2);
-    margin-bottom: calc(var(--spacing-unit) * 2);
-    border-radius: 30px; /* Arrondit les coins de l'article */ margin: 1rem 0; /* Ajoute de l'espacement au-dessus et en dessous de l'article */
+    border-radius: 15px; /* Arrondit les coins de l'article */ margin: 1rem 0; /* Ajoute de l'espacement au-dessus et en dessous de l'article */
+    margin: 1rem 0;
+    padding: 1rem;
 }
 .background-richou{
     background-image: url(Imagesfan/rich3.jpeg) ;
     background-size: cover; /* Adapte l'image pour couvrir toute la section */
     background-position: center; /* Centre l'image */
     background-repeat: no-repeat; /* Évite de répéter l'image */
-    border-radius: 30px; 
-    height: 300px;
+    border-radius: 15px; 
+    height: 200px;
     display: flex;
     justify-content: center; /* Centre horizontalement */
     align-items: center; /* Centre verticalement */
 
 }
 .biog{
-    line-height: 2; /* Améliore l'espacement entre les lignes pour une meilleure lisibilité */
+    line-height: 1.8; /* Améliore l'espacement entre les lignes pour une meilleure lisibilité */
+    font-size: 14px; 
 }
 
 .sad{
     background-color: grey;
-    padding: 1.5rem; 
-    border-radius: 30px; /* Arrondit les coins de l'article */
-    margin: 1rem 0; 
-    
-    
+    padding: 1rem; 
+    border-radius: 15px; /* Arrondit les coins de l'article */
 }
 
 
-h1{
+h1, h2, h3{
     text-align: center;
-    font-family: "Barrio", system-ui;
+    font-family: "Barrio", sans-serif;
     font-weight: 100;
-    font-size: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 h2{
-    text-align: center;
-    font-family: "Barrio", system-ui;
-    font-weight: 100;
-    font-size: 2.5rem;
-}
+    font-size: 1.8rem;
 
-h3{
-    text-align: center;
-    font-family: "Barrio", system-ui;
-    font-weight: 100;
-    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
 }
 
 
@@ -127,7 +123,7 @@ h3{
                                     - auto : centre horizontalement en répartissant les marges gauche/droite de façon égale.
                                     - Nécessite un display: block et une largeur (width) définie. */
     margin: 0 auto;
-    width: 15%;
+    width: 50%;
     height: auto;
 }
     
@@ -151,7 +147,7 @@ footer{
   }
 @media (max-width: 768px) {
     header {
-        max-width: 72%; /* Limite la largeur du header à 90% de l'écran */
+        max-width: 80%; /* Limite la largeur du header à 90% de l'écran */
         padding: 0.5rem; /* Réduit le padding pour économiser de l'espace */
     }
 
