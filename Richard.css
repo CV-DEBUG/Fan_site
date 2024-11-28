@@ -72,6 +72,12 @@ nav ul li:first-child a:hover {
     border: 2px solid green;
 }
 
+.ul-section li a:hover{
+    color: white;
+    background-color: rgb(0, 100, 200);
+    transform: scale(1.5);
+}
+
 .background-richou{
     background-image: url(Imagesfan/rich3.jpeg) ;
     background-size: cover; /* Adapte l'image pour couvrir toute la section */
@@ -173,7 +179,11 @@ li{
 footer{
     background-color: slategray;
     text-align: center;
+    border-radius: 15px;
 }
+
+
+
  /* CSSS POUR MEDIA.HTML*/
  
 iframe{
@@ -228,5 +238,15 @@ iframe{
         gap: 10px; /* Ajuste l'espacement entre les éléments */
         margin-top: 20px;
     }
+    .gnu-image {
+        width: 20%; /* Réduit la largeur à 50% de son conteneur */
+        height: auto; /* Garde les proportions */
+    }
+    .foo-class{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
+    }
+    
 }
