@@ -1,3 +1,4 @@
+/* General body styling */
 body {
     font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
     line-height: 1.6;
@@ -8,6 +9,7 @@ body {
     color: #202122;
 }
 
+/* Styling for the title */
 .title {
     font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
     border-bottom: 1px solid #a2a9b1;
@@ -19,6 +21,7 @@ body {
     font-weight: normal;
 }
 
+/* Container for pioneers section */
 .pioneers-container {
     display: flex;
     justify-content: space-between;
@@ -41,6 +44,7 @@ body {
     gap: 20px;
 }
 
+/* Styling for image container */
 .image-container {
     border: 1px solid #a2a9b1;
     background-color: #f8f9fa;
@@ -48,20 +52,26 @@ body {
     margin: 5px;
 }
 
+/* Animation effect on image container hover */
 .image-container:hover {
     animation: bounce 0.5s ease;
     transform: translateY(0);
 }
 
+/* Keyframes for bounce animation */
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
 }
 
+/* Styling for images inside the image container */
 .image-container img {
     width: 100%;
     height: auto;
@@ -70,6 +80,7 @@ body {
     margin-bottom: 5px;
 }
 
+/* Styling for captions inside the image container */
 .image-container span {
     font-size: 0.9em;
     color: #202122;
@@ -127,39 +138,52 @@ header {
     vertical-align: middle;
 }
 
+/* 
+ * This CSS rule applies styles to the body element when the viewport width is 600 pixels or less.
+ * It sets the padding of the body element to 10 pixels, providing some spacing around the content.
+ */
 @media (max-width: 600px) {
     body {
         padding: 10px;
     }
+
     .title {
         font-size: 1.5em;
     }
+
     .pioneers-container {
         flex-direction: column;
         align-items: center;
     }
+
     .pioneers-grid {
         flex-direction: column;
         align-items: center;
     }
+
     .pioneer-column {
         width: 100%;
     }
+
     .image-container img {
         width: 150px;
         height: 150px;
     }
+
     .container {
         flex-direction: column;
         align-items: center;
     }
+
     .icon {
         width: 60px;
         height: 60px;
     }
+
     .divider {
         height: 40px;
     }
+
     .home-icon {
         width: 30px;
         height: 30px;

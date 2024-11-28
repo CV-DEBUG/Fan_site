@@ -74,6 +74,11 @@ body {
     margin-top: calc(var(--spacing-unit) * 2);
 }
 
+/* 
+This CSS code applies responsive design rules for screens with a maximum width of 768px.
+- .nav-list: Changes the flex direction to column and centers the items.
+- .nav-item: Adjusts the margin to be half of the spacing unit vertically and 0 horizontally.
+*/
 @media (max-width: 768px) {
     .nav-list {
         flex-direction: column;
@@ -90,7 +95,6 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* Réduisez l'espace entre les images */
     margin-bottom: 2rem;
 }
 
@@ -236,6 +240,11 @@ body {
     display: flex;
 }
 
+/* 
+- .burger-menu: Sets the display property to block, making the burger menu visible on smaller screens.
+- .quick-links: Sets the display property to none, hiding the quick links on smaller screens.
+- .quick-links.show: Sets the display property to flex, making the quick links visible and arranged in a flex container when the 'show' class is added.
+*/
 @media (max-width: 768px) {
     .burger-menu {
         display: block;
@@ -302,13 +311,9 @@ video {
 .profile-container {
     display: flex;
     flex-direction: row;
-    /* Aligner les images horizontalement */
     justify-content: center;
-    /* Centrer les images horizontalement */
     align-items: center;
-    /* Aligner les images verticalement */
     gap: 1rem;
-    /* Réduisez l'espace entre les images */
     margin-bottom: 2rem;
 }
 
