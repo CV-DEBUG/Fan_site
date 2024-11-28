@@ -38,13 +38,20 @@ ul li a {
 nav ul li a:hover {
     background-color: rgba(255,255,255,0.2);
 }
-
+nav ul li:first-child a:hover {
+    background-color: transparent; /* Retirer l'effet de fond */
+}
 
 .home-icon {
     width: 40px;
     height: 40px;
 }
 
+.home-icon:hover{
+    background-color: transparent; /* Pas d'arrière-plan supplémentaire */
+    transform: scale(1.3);
+   
+}
 
 
 
