@@ -90,8 +90,6 @@ nav ul li:first-child a:hover {
 }
 
 
-
-
 .imgrich{
     display: flex;
     justify-content: center;
@@ -208,7 +206,9 @@ iframe{
     align-items: center; /* Centre les enfants horizontalement */
     width: 100%; /* Chaque article occupe toute la largeur du conteneur */
 }
-
+.ajuste{
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 768px) {
     header {
