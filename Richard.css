@@ -156,9 +156,7 @@ h3 {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    font-weight: bold;
-    font-size: 150%;
-    font-family: "Dancing Script", serif;
+    font-size: 110%;
   
 }
 
@@ -178,16 +176,24 @@ li{
 
 footer{
     background-color: slategray;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 15px;
 }
 .foo-class{
-
     text-align: center;
-
 }
 
+.fooli img{
+    width: 20px; /* Largeur identique */
+    height: 20px; /* Hauteur identique */
+    object-fit: cover; /* Adapte l'image pour remplir sans déformation */
 
+}
+.containerdiv{
+    display :flex
+}
  /* CSSS POUR MEDIA.HTML*/
  
 iframe{
@@ -229,6 +235,10 @@ iframe{
     ul li a {
         padding: 0.5rem; /* Réduit les paddings internes des liens */
         font-size: 12px; /* Réduit la taille du texte des liens */
+    }
+    .containerdiv{
+        display :flex ;
+        flex-direction: column;
     }
    
 }
