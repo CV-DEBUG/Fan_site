@@ -69,3 +69,13 @@ img {
     justify-content: space-around;
     margin-bottom: 120px;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
