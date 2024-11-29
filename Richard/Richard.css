@@ -53,9 +53,6 @@ nav ul li:first-child a:hover {
    
 }
 
-
-
-
 .ul-section {
     display: flex;
     justify-content: center;
@@ -208,7 +205,6 @@ iframe{
 }
 .corpsf{
     display: flex;
-    flex-direction: row;
     align-items: center; /* Centre les enfants horizontalement */
     width: 100%; /* Chaque article occupe toute la largeur du conteneur */
 }
@@ -218,7 +214,10 @@ iframe{
     header {
         padding: 0.5rem; /* Réduit le padding pour économiser de l'espace */
     }
-
+    .containerframe{
+        display: flex; /* Active Flexbox */
+        flex-direction: column;
+    }
     .ul-nav {
         flex-direction: row;
         justify-content: space-around;
