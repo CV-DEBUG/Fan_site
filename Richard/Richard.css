@@ -113,6 +113,11 @@ nav ul li:first-child a:hover {
     line-height: 1.8; /* Improves spacing between lines for better readability */
     font-size: 14px;
 }
+.containerdiv {
+    display: flex;
+}
+ 
+
 
 .sad {
     background-color: grey;
@@ -157,7 +162,7 @@ h3 {
                        - auto: Horizontally centers by distributing left/right margins equally.
                        - Requires display: block and a defined width. */
     margin: 0 auto;
-    width: 50%;
+    width: 30%;
     height: auto;
 }
 
@@ -183,9 +188,6 @@ footer {
     object-fit: cover; /* Adjusts the image to fill without distortion */
 }
 
-.containerdiv {
-    display: flex;
-}
 
 /* CSS FOR MEDIA.HTML */
 
@@ -252,7 +254,7 @@ iframe {
         margin-top: 20px;
     }
     .gnu-image {
-        width: 20%; /* Reduces width to 50% of its container */
+        width: 15%; 
         height: auto; /* Maintains proportions */
     }
     .foo-class {
